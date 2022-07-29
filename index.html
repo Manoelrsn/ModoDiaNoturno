@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modo Dia / Noite</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="./images/Icon.png" rel="icon">
+  </head>
+  <body controlone="On" controltwo="00">
+    <div id="InterfaceOne">
+        <div class="HeaderOne">
+            <h1 class="TitleDay">Modo Diario</h1>
+            <h1 class="TitleNight">Modo Noturno</h1>
+        </div>
+        <div id="ButtonBox">
+            <h2 id="ButtonOne" onclick="Click('InterfaceTwo','InterfaceOne','InterfaceTree')" onmouseover="Over('ButtonOne')" onmouseout="Out('ButtonOne')">Modo Extensivo</h2>
+            <h2 id="ButtonTwo" onclick="Click('InterfaceTree','InterfaceOne','InterfaceTwo')" onmouseover="Over('ButtonTwo')" onmouseout="Out('ButtonTwo')">Modo Clique</h2>
+        </div>
+    </div>
+    <div id="InterfaceTwo">
+        <div class="HeaderTwo">
+            <h1 class="TitleDay">Modo Diario</h1>
+            <h1 class="TitleNight">Modo Noturno</h1>
+        </div>
+        <div class="ButtonReturn">
+            <img src="./images/ButtonReturnDay.png" class="ImgReturnDay" onclick="Click('InterfaceOne','InterfaceTwo','InterfaceTree')">
+            <img src="./images/ButtonReturnNight.png" class="ImgReturnNight" onclick="Click('InterfaceOne','InterfaceTwo','InterfaceTree')">
+        </div>
+        <div class="ContainerLogical">
+            <div class="LeftLogic" onclick="Constructor()"><img src="./images/SunIcon.png" id="ImgLeftSun"></div>
+            <div class="CenterLogic" onclick="Constructor()"></div>
+            <div class="RightLogic" onclick="Constructor()"><img src="./images/MoonIcon.png" id="ImgRightMoon"></div>
+        </div>
+    </div>
+    <div id="InterfaceTree">
+        <div class="HeaderTwo">
+            <h1 class="TitleDay">Modo Diario</h1>
+            <h1 class="TitleNight">Modo Noturno</h1>
+        </div>
+        <div class="ButtonReturn">
+            <img src="./images/ButtonReturnDay.png" class="ImgReturnDay" onclick="Click('InterfaceOne','InterfaceTwo','InterfaceTree')">
+            <img src="./images/ButtonReturnNight.png" class="ImgReturnNight" onclick="Click('InterfaceOne','InterfaceTwo','InterfaceTree')">
+        </div>
+        <div class="ContainerLogical">
+            <img src="./images/SunIcon.png" id="ImgCenterSun" onclick="Constructor()">
+            <img src="./images/MoonIcon.png" id="ImgCenterMoon" onclick="Constructor()">
+        </div>
+    </div>      
+    <script src="script.js"></script>
+    </body>
+</html>

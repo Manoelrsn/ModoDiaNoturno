@@ -1,0 +1,254 @@
+
+/*Media Queries - horizontal orientation*/
+
+/*-Class A General - (Body)-*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+    /*--Class B General - (InterfaceOne, InterfaceTwo, InterfaceTree)--*/
+    #InterfaceOne, #InterfaceTwo, #InterfaceTree{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #InterfaceTwo, #InterfaceTree{
+        display: none;
+    }
+
+    /*--Class B1 - (InterfaceOne)--*/
+
+        /*---Class B1 - Part A (Header and Title)---*/
+        .HeaderOne{
+            width: 100vw;
+            height: 30vh;
+            margin-top: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .HeaderOne h1{
+            font-family: Kuban;
+            font-size: 8vw;
+            position: absolute;
+        }
+
+        /*---Class B1 - Part B (ButtonBox and Buttons)---*/
+        #ButtonBox{
+            width: 100vw;
+            height: 30vh;
+            margin-bottom: 15vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-around;
+            align-items: center;
+        }
+        #ButtonBox h2{
+            width: 30vw;
+            padding: 5vh 0px;
+            text-align: center;
+            font-size: 2vw;
+            font-family: Azonix;
+        }
+
+    /*--Class B2 - (InterfaceTwo and InterfaceTree)--*/
+
+        /*---Class B2 General - (InterfaceTwo and InterfaceTree)---*/
+
+            /*----Header and Title----*/
+            .HeaderTwo{
+                width: 100vw;
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .HeaderTwo h1{
+                font-family: Kuban;
+                font-size: 8vw;
+                position: absolute;
+            }
+            .TitleDay{
+                opacity: 1;
+                transition: opacity 0.5s ease-in;
+            }
+            .TitleNight{
+                opacity: 0;
+                transition: opacity 0.5s 0.5s ease-out;
+            }
+
+            /*----ButtonReturn----*/
+            .ButtonReturn{
+                height: 8vh;
+                width: 8vh;
+                margin-left: 8vh;
+                margin-right: calc(100vw - 16vh);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .ImgReturnDay{
+                position: absolute;
+                height: 8vh;
+                width: 8vh;
+                opacity: 1;
+                transition: opacity 0.5s ease-in;
+            }
+            .ImgReturnNight{
+                position: absolute;
+                height: 8vh;
+                width: 8vh;
+                opacity: 0;
+                transition: opacity 0.5s 0.5s ease-out;
+            }
+            .ContainerLogical{
+                width: 100vw;
+                height: 54vh;
+                margin-bottom: 8vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        /*---Class B2 - Part A (Icon Extensive)---*/
+        .LeftLogic{
+            height: 20vh;
+            width: 20vh;
+            padding: 2vh;
+            background-color: black;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 100%;
+            display: flex;
+            align-items: center;
+            transition: 0.5s linear;
+        }
+        #ImgLeftSun{
+            width: 19vh;
+            height: 19vh;
+            background-color: white;
+            border-radius: 100%;
+            opacity: 1;
+            transition: 0.5s ease-in;
+        }
+        .CenterLogic{
+            height: 20vh;
+            width: 20vh;
+            padding: 2vh;
+            background-color: black;
+            transition: 0.5s linear;
+        }
+        .RightLogic{
+            height: 20vh;
+            width: 20vh;
+            padding: 2vh;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 100%;
+            transition: 0.5s linear;
+        }
+        #ImgRightMoon{
+            width: 18vh;
+            height: 18vh;
+            padding: 1vh;
+            opacity: 0;
+            background-color: black;
+            border-radius: 100%;
+            transition: 0.5s 0.5s ease-out;
+        }
+
+        /*---Class B2 - Part B (Icon Click)---*/
+        .ContainerLogical #ImgCenterSun, .ContainerLogical #ImgCenterMoon{
+            position: absolute;
+            height: 18vh;
+            width: 18vh;
+            border-radius: 100%;
+        }
+        #ImgCenterSun{
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+        }
+        #ImgCenterMoon{
+            opacity: 0;
+            transition: opacity 0.5s 0.5s ease-out;
+        }
+
+/*Media Queries - Orientação Vertical*/
+
+@media all and (orientation: portrait){
+/*-Class A General - (Body)-*/
+
+    /*--Class B General - (InterfaceOne, InterfaceTwo, InterfaceTree)--*/
+
+    /*--Class B1 - (InterfaceOne)--*/
+
+        /*---Class B1 - Part A (Header and Title)---*/
+        .HeaderOne h1{
+            font-size: 12vw;
+        }
+        /*---Class B1 - Part B (ButtonBox and Buttons)---*/
+        #ButtonBox h2{
+            width: 60vw;
+            padding: 5vw;
+            font-size: 5vw;
+        }
+
+    /*--Class B2 - (InterfaceTwo and InterfaceTree)--*/
+
+        /*---Class B2 General - (InterfaceTwo and InterfaceTree)---*/
+
+            /*----Header and Title----*/
+            .HeaderTwo h1{
+                font-size: 12vw;
+            }
+            /*----ButtonReturn----*/
+            .ButtonReturn{
+                height: 10vw;
+                width: 10vw;
+                margin-left: 12vw;
+                margin-right: calc(100vw - 26vw);
+            }
+            .ImgReturnDay, .ImgReturnNight{
+                height: 10vw;
+                width: 10vw;
+            }
+        /*---Class B2 - Part A (Icon Extensive)---*/
+        .LeftLogic, .CenterLogic, .RightLogic{
+            height: 15vw;
+            width: 15vw;
+            padding: 3vw;
+        }
+        #ImgLeftSun, #ImgRightMoon{
+            width: 13vw;
+            height: 13vw;
+            padding: 1vw;
+        }
+
+        /*---Class B2 - Part B (Icon Click)---*/
+        .ContainerLogical #ImgCenterSun, .ContainerLogical #ImgCenterMoon{
+            height: 15vw;
+            width: 15vw;
+        }
+}
+
+
+@font-face {
+    font-family: Azonix;
+    src: url(./font_text/Azonix.otf);
+}
+
+@font-face {
+    font-family: Kuban;
+    src: url(./font_text/Kuban.otf);
+}
