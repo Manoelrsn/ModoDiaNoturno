@@ -84,7 +84,7 @@ body{
             }
             .TitleNight{
                 opacity: 0;
-                transition: opacity 0.5s 0.5s ease-out;
+                transition: opacity 0.5s 1s ease-out;
             }
 
             /*----ButtonReturn----*/
