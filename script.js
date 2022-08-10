@@ -40,9 +40,7 @@ function Constructor(){
         document.body.style.color="white";
         for(var count = 0;count <=2;count++){
             TitleDay[count].style.opacity="0";
-            TitleDay[count].transition="opacity 0.5s ease-in";
             TitleNight[count].style.opacity="1";
-            TitleNight[count].style.transition="opacity 0.5s 1s ease-in";
         }
         ImgReturnDay[0].style.opacity="0";
         ImgReturnDay[1].style.opacity="0";
@@ -65,9 +63,7 @@ function Constructor(){
         document.body.style.color="black";
         for(var count = 0;count <=2;count++){
             TitleNight[count].style.opacity="0";
-            TitleNight[count].transition="opacity 0.5s ease-in";
             TitleDay[count].style.opacity="1";
-            TitleDay[count].style.transition="opacity 0.5s 1s ease-in";
         }
         ImgReturnDay[0].style.opacity="1";
         ImgReturnDay[1].style.opacity="1";

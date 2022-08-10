@@ -37,11 +37,11 @@ body{
             justify-content: center;
             align-items: center;
         }
-        .HeaderOne h1{
-            font-family: Kuban;
-            font-size: 8vw;
-            position: absolute;
-        }
+            .HeaderOne h1{
+                font-family: Kuban;
+                font-size: 8vw;
+                position: absolute;
+            }
 
         /*---Class B1 - Part B (ButtonBox and Buttons)---*/
         #ButtonBox{
@@ -53,13 +53,13 @@ body{
             justify-content:space-around;
             align-items: center;
         }
-        #ButtonBox h2{
-            width: 30vw;
-            padding: 5vh 0px;
-            text-align: center;
-            font-size: 2vw;
-            font-family: Azonix;
-        }
+            #ButtonBox h2{
+                width: 30vw;
+                padding: 5vh 0px;
+                text-align: center;
+                font-size: 2vw;
+                font-family: Azonix;
+            }
 
     /*--Class B2 - (InterfaceTwo and InterfaceTree)--*/
 
@@ -73,18 +73,16 @@ body{
                 justify-content: center;
                 align-items: center;
             }
-            .HeaderTwo h1{
-                font-family: Kuban;
-                font-size: 8vw;
-                position: absolute;
-            }
+                .HeaderTwo h1{
+                    font-family: Kuban;
+                    font-size: 8vw;
+                    position: absolute;
+                }
             .TitleDay{
                 opacity: 1;
-                transition: opacity 0.5s ease-in;
             }
             .TitleNight{
                 opacity: 0;
-                transition: opacity 0.5s 1s ease-out;
             }
 
             /*----ButtonReturn----*/
